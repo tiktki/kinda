@@ -6,6 +6,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/kinda
-    command: sh -c "cd kinda-fr && yarn dev"
+    command: sh -c "cd kinda-fr && yarn install && yarn dev"
     ports:
-      - "3000:3000"
+      - '3000:3000'
